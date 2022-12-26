@@ -3,12 +3,13 @@
 
 body {
    margin: 0;
-   padding-right: 5vw;
+   padding-right: 7vw;
+   background-color: var(--cor-corpo);
 }
 
 .header {
    height: 60px;
-   width: 95vw;
+   width: 93vw;
    background-color: var(--cor-header);
    display: grid;
    grid-template-columns: 3fr 2fr 1fr;
@@ -16,6 +17,8 @@ body {
    padding-left: 3vw;
    padding-bottom: 1px;
    box-shadow: 0px 5px 5px var(--sombra);
+   position: sticky;
+   top: 0;
 }
 
 .logo {
@@ -60,4 +63,7 @@ body {
    background-color: var(--btn-claro);
    border: 0px solid;
    border-radius: 5px;
+}
+main {
+   height: 10000px;
 }
