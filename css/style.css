@@ -1,52 +1,63 @@
 @import url(grid.css);
-:root {
-   --bar-cor: rgb(255, 255, 255);
-   --bg-cor: rgb(243, 243, 243);
-   --sombra: rgb(204, 204, 204);
-   --cor-btn: rgb(190, 190, 190);
-   --cor-btn-claro: rgb(211, 211, 211);
-}
+@import url(variaveis.css);
+
 body {
    margin: 0;
-   padding-right: 7vw;
-   background-color: var(--bg-cor);
+   padding-right: 5vw;
 }
-.bar {
-   background-color: var(--bar-cor);
-   width: 93vw;
-   height: 50px;
-   padding-left: 64px;
-   box-shadow: 0 5px 5px var(--sombra);
-   position: fixed;
-}
-.logo {
-   align-self: center;
-}
-/* .espaco {
-   height: 100000px;
-} */
-.lateral {
+
+.header {
+   height: 60px;
+   width: 95vw;
+   background-color: var(--cor-header);
+   display: grid;
+   grid-template-columns: 3fr 2fr 1fr;
    align-content: end;
-   margin: 1px;
+   padding-left: 3vw;
+   padding-bottom: 1px;
+   box-shadow: 0px 5px 5px var(--sombra);
 }
-input.pesquisa {
-   border: 1px solid var(--cor-btn);
-   border-radius: 5px;
-   height: 40px;
+
+.logo {
+   align-self: end;
+}
+
+.pesquisa {
+   display: grid;
+   grid-template-columns: 1fr;
+   align-content: end;
+}
+
+.pesq input {
+   height: 50px;
    width: 300px;
-}
-.btn {
-   background-color: var(--cor-btn);
-   border: 1px solid var(--cor-btn);
-}
-.h-btn {
-   border: 0px solid;
-   background-color: var(--cor-btn-claro);
-   height: 40px;
-   width: 40px;
+   border: 1px solid var(--btn-cinza);
    border-radius: 5px;
+   margin-right: 5px;
+   font-size: large;
+   padding-left: 15px;
 }
-.head-cont {
-   justify-content: end;
+
+.pesq button {
+   height: 50px;
+   width: 50px;
+   border: 0px solid;
+   border-radius: 5px;
+   background-color: var(--btn-cinza);
+}
+
+.opt {
+   display: grid;
+   grid-template-columns: 50px 50px 50px 50px;
    gap: 5px;
+   align-content: end;
+   justify-content: end;
+}
+
+.btn-header {
+   height: 50px;
+   width: 50px;
+   background-color: var(--btn-claro);
+   border: 0px solid;
+   border-radius: 5px;
 }
