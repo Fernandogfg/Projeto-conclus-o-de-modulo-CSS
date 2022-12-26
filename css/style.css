@@ -4,6 +4,7 @@
    --bg-cor: rgb(243, 243, 243);
    --sombra: rgb(204, 204, 204);
    --cor-btn: rgb(190, 190, 190);
+   --cor-btn-claro: rgb(211, 211, 211);
 }
 body {
    margin: 0;
@@ -24,13 +25,28 @@ body {
 /* .espaco {
    height: 100000px;
 } */
+.lateral {
+   align-content: end;
+   margin: 1px;
+}
 input.pesquisa {
-   border: 2px solid var(--cor-btn);
+   border: 1px solid var(--cor-btn);
    border-radius: 5px;
-   height: 30px;
+   height: 40px;
    width: 300px;
-   align-self: end;
 }
 .btn {
    background-color: var(--cor-btn);
+   border: 1px solid var(--cor-btn);
+}
+.h-btn {
+   border: 0px solid;
+   background-color: var(--cor-btn-claro);
+   height: 40px;
+   width: 40px;
+   border-radius: 5px;
+}
+.head-cont {
+   justify-content: end;
+   gap: 5px;
 }
