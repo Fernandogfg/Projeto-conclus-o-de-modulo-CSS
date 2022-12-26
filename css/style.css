@@ -1,0 +1,36 @@
+@import url(grid.css);
+:root {
+   --bar-cor: rgb(255, 255, 255);
+   --bg-cor: rgb(243, 243, 243);
+   --sombra: rgb(204, 204, 204);
+   --cor-btn: rgb(190, 190, 190);
+}
+body {
+   margin: 0;
+   padding-right: 7vw;
+   background-color: var(--bg-cor);
+}
+.bar {
+   background-color: var(--bar-cor);
+   width: 93vw;
+   height: 50px;
+   padding-left: 64px;
+   box-shadow: 0 5px 5px var(--sombra);
+   position: fixed;
+}
+.logo {
+   align-self: center;
+}
+/* .espaco {
+   height: 100000px;
+} */
+input.pesquisa {
+   border: 2px solid var(--cor-btn);
+   border-radius: 5px;
+   height: 30px;
+   width: 300px;
+   align-self: end;
+}
+.btn {
+   background-color: var(--cor-btn);
+}
