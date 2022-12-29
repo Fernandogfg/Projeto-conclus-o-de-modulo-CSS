@@ -1,1 +1,5 @@
 pesquisa e botoes do header tem que alinhar no chão do elemento (tentar usar o elemento para alinhas os filhos)
+
+Porque padding no body baixo n aparece?
+
+espaço estranho na Aside
