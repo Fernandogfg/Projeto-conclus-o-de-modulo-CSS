@@ -50,7 +50,7 @@ body {
    background-color: var(--btn-cinza);
    padding: 0px;
    position: absolute;
-   top: 5px;
+   bottom: 1px;
 }
 
 .opt {
@@ -68,6 +68,14 @@ body {
    border: 0px solid;
    border-radius: 5px;
 }
+.btn-header-foto {
+   padding: 0;
+}
+.btn-header img {
+   height: 40px;
+   width: 40px;
+   border-radius: 5px;
+}
 main {
    padding-left: 3vw;
    padding-top: 1vw;
@@ -78,8 +86,7 @@ main {
    background-color: var(--fundo-cont);
 }
 .story {
-   height: 152px;
-   background-color: var(--fundo-cont);
+   height: 165px;
 }
 .postar {
    height: 168px;
@@ -191,6 +198,7 @@ hr {
    border: none;
    text-align: left;
    align-items: center;
+   font-weight: bolder;
 }
 .story {
    display: flex;
@@ -203,7 +211,11 @@ hr {
    height: 10px;
 }
 .story::-webkit-scrollbar-thumb {
-   background-color: rgb(196, 196, 196);
+   background-color: var(--btn-cinza);
+   border-radius: 10px;
+}
+.story::-webkit-scrollbar-track {
+   background-color: var(--btn-claro);
    border-radius: 10px;
 }
 .story-post {
@@ -221,4 +233,48 @@ hr {
 }
 .novo img {
    justify-self: center;
+}
+.postar {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: 60% 40%;
+   gap: 10px;
+   padding: 10px 10px 10px 10px;
+}
+.textarea {
+   height: 100px;
+   width: 100%;
+   grid-column: span 6;
+}
+.postar-btn {
+   height: 30px;
+   width: 100%;
+   padding: 0px;
+   border: 0px;
+   background-color: var(--btn-claro);
+   border-radius: 10px;
+}
+.enviar {
+   grid-column: span 2;
+   background-color: var(--enviar);
+   height: 50px;
+   width: 80%;
+   justify-self: right;
+}
+.postar p {
+   width: 100%;
+   text-align: left;
+   align-self: top;
+   margin: 0;
+}
+.postar .pic {
+   grid-row: span 2;
+   justify-content: center;
+   display: grid;
+}
+.pic img {
+   height: 48px;
+   width: 48px;
+   border-radius: 10px;
+   justify-content: center;
 }
