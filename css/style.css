@@ -1,6 +1,9 @@
 @import url(grid.css);
 @import url(variaveis.css);
-
+@import url(postar.css);
+@import url(story.css);
+@import url(perfil.css);
+@import url(feed.css);
 body {
    padding: 0;
    margin: 0;
@@ -68,47 +71,66 @@ body {
    border: 0px solid;
    border-radius: 5px;
 }
+
 .btn-header-foto {
    padding: 0;
 }
+
 .btn-header img {
    height: 40px;
    width: 40px;
    border-radius: 5px;
 }
+
 main {
    padding-left: 3vw;
    padding-top: 1vw;
    padding-right: 3vw;
 }
+
 .perfil {
    height: 700px;
    background-color: var(--fundo-cont);
+   border: 1px var(--separador) solid;
+   border-radius: 10px;
 }
+
 .story {
    height: 165px;
 }
+
 .postar {
    height: 168px;
    background-color: var(--fundo-cont);
+   border: 1px var(--separador) solid;
+   border-radius: 10px;
 }
+
 .feed {
-   height: 337px;
    background-color: var(--fundo-cont);
+   border: 1px var(--separador) solid;
+   border-radius: 10px;
 }
+
 .aside {
    height: 780px;
 }
+
 .recomendado {
    height: 500px;
    background-color: var(--fundo-cont);
+   border: 1px var(--separador) solid;
+   border-radius: 10px;
 }
 
 .alta {
    height: 260px;
    background-color: var(--fundo-cont);
+   border: 1px var(--separador) solid;
+   border-radius: 10px;
 }
-button .notificacao {
+
+.notificacao {
    height: 10px;
    width: 10px;
    border-radius: 5px;
@@ -116,165 +138,4 @@ button .notificacao {
    position: absolute;
    top: 10px;
    right: 50px;
-}
-.perfil {
-   display: grid;
-   border-radius: 20px;
-   height: 650px;
-   position: relative;
-}
-.capa img {
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-}
-.capa {
-   width: 100%;
-   height: 100px;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-   overflow: hidden;
-}
-.foto img {
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-   justify-content: center;
-}
-.foto {
-   border: solid white 2px;
-   height: 118px;
-   width: 118px;
-   overflow: hidden;
-   margin: auto;
-}
-.perfil-group {
-   position: absolute;
-   top: 50px;
-   text-align: center;
-   width: 100%;
-}
-.seguidores {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   align-self: center;
-   margin: auto;
-   gap: 20px;
-   width: 70%;
-}
-.seg {
-   background-color: var(--cor-corpo);
-   height: auto;
-   width: 100%;
-   text-align: center;
-   box-sizing: border-box;
-   padding: 15px 0 15px 0;
-}
-.seg p {
-   margin: 0;
-   color: var(--btn-claro);
-}
-hr {
-   width: 100%;
-   align-self: center;
-   border-color: var(--separador);
-   border-style: solid;
-}
-.separador {
-   padding: 0 20px;
-   margin: 20px;
-}
-.perfil-opt {
-   display: grid;
-   gap: 5px;
-   width: 80%;
-   margin: auto;
-}
-.perfil-opt button {
-   display: flex;
-   gap: 16px;
-   padding: 8px 16px;
-   background-color: var(--fundo-cont);
-   border: none;
-   text-align: left;
-   align-items: center;
-   font-weight: bolder;
-}
-.story {
-   display: flex;
-   overflow-x: auto;
-   gap: 6px;
-   flex-direction: row;
-   overflow-y: hidden;
-}
-.story::-webkit-scrollbar {
-   height: 10px;
-}
-.story::-webkit-scrollbar-thumb {
-   background-color: var(--btn-cinza);
-   border-radius: 10px;
-}
-.story::-webkit-scrollbar-track {
-   background-color: var(--btn-claro);
-   border-radius: 10px;
-}
-.story-post {
-   height: 152px;
-   width: 110px;
-   flex: 0 0 110px;
-   border-radius: 10px;
-}
-.novo {
-   border: dashed var(--btn-cinza) 1px;
-   box-sizing: border-box;
-   display: grid;
-   align-content: center;
-   justify-content: center;
-}
-.novo img {
-   justify-self: center;
-}
-.postar {
-   display: grid;
-   grid-template-columns: repeat(7, 1fr);
-   grid-template-rows: 60% 40%;
-   gap: 10px;
-   padding: 10px 10px 10px 10px;
-}
-.textarea {
-   height: 100px;
-   width: 100%;
-   grid-column: span 6;
-}
-.postar-btn {
-   height: 30px;
-   width: 100%;
-   padding: 0px;
-   border: 0px;
-   background-color: var(--btn-claro);
-   border-radius: 10px;
-}
-.enviar {
-   grid-column: span 2;
-   background-color: var(--enviar);
-   height: 50px;
-   width: 80%;
-   justify-self: right;
-}
-.postar p {
-   width: 100%;
-   text-align: left;
-   align-self: top;
-   margin: 0;
-}
-.postar .pic {
-   grid-row: span 2;
-   justify-content: center;
-   display: grid;
-}
-.pic img {
-   height: 48px;
-   width: 48px;
-   border-radius: 10px;
-   justify-content: center;
 }

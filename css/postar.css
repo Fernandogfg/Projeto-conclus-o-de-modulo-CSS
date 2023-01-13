@@ -1,0 +1,56 @@
+.postar {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: 60% 40%;
+   gap: 10px;
+   padding: 10px;
+}
+
+.postar-group {
+   display: flex;
+   grid-column: span 3;
+   justify-content: space-between;
+}
+
+.textarea {
+   height: 100px;
+   width: 100%;
+   grid-column: span 6;
+}
+
+.postar-btn {
+   height: 30px;
+   width: 50px;
+   padding: 0px;
+   border: 0px;
+   background-color: var(--btn-claro);
+   border-radius: 2px;
+}
+
+#postar {
+   grid-column: span 3;
+   background-color: var(--enviar);
+   height: 50px;
+   width: 50%;
+   justify-self: right;
+}
+
+.postar p {
+   /* width: 50%; */
+   text-align: left;
+   align-self: top;
+   margin: 0;
+}
+
+.pic {
+   grid-row: span 2;
+   justify-content: center;
+   /* display: grid; */
+}
+
+.pic img {
+   height: 48px;
+   width: 48px;
+   border-radius: 4px;
+   justify-content: center;
+}

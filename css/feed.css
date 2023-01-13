@@ -1,0 +1,43 @@
+.feed {
+   padding: 10px;
+}
+.feed-perfil {
+   display: flex;
+}
+.feed-perfil img {
+   height: 48px;
+   width: 48px;
+   border-radius: 4px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+.feed-info {
+   display: grid;
+   /* grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr; */
+}
+.feed-perfil h3 {
+   margin: 0;
+   align-self: center;
+   height: 20px;
+}
+.feed-perfil span {
+   margin-left: 5px;
+   align-self: center;
+   font-weight: 500;
+   font-size: 14px;
+   color: var(--btn-claro);
+}
+.feed-info p {
+   margin: 0;
+}
+.feed-opt {
+   display: flex;
+   justify-content: space-between;
+}
+.like-share {
+   display: flex;
+   gap: 10px;
+}
+.like-share button {
+}

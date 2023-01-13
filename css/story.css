@@ -1,0 +1,43 @@
+.perfil-opt button {
+   display: flex;
+   gap: 16px;
+   padding: 8px 16px;
+   background-color: var(--fundo-cont);
+   border: none;
+   text-align: left;
+   align-items: center;
+   font-weight: bolder;
+}
+.story {
+   display: flex;
+   overflow-x: auto;
+   gap: 6px;
+   overflow-y: hidden;
+}
+.story::-webkit-scrollbar {
+   height: 10px;
+}
+.story::-webkit-scrollbar-thumb {
+   background-color: var(--btn-cinza);
+   border-radius: 10px;
+}
+.story::-webkit-scrollbar-track {
+   background-color: var(--btn-claro);
+   border-radius: 10px;
+}
+.story-post {
+   height: 152px;
+   width: 110px;
+   flex: 0 0 110px;
+   border-radius: 10px;
+}
+.novo {
+   border: dashed var(--btn-cinza) 1px;
+   box-sizing: border-box;
+   display: grid;
+   align-content: center;
+   justify-content: center;
+}
+.novo img {
+   justify-self: center;
+}
