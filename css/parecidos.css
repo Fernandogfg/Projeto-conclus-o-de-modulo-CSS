@@ -4,6 +4,7 @@
 .parecidos-group {
    display: grid;
    gap: 15px;
+   padding-bottom: 16px;
 }
 h1 {
    margin: 0;
@@ -14,19 +15,22 @@ h1 {
 }
 .parecidos-perfil-foto {
    height: 48px;
+   overflow: hidden;
 }
 .parecidos-perfil-foto img {
    height: 48px;
    width: 48px;
    margin-right: 10px;
+   object-fit: cover;
 }
 .parecidos-perfil-info {
    display: grid;
    height: 48px;
 }
 .parecidos-perfil-info p {
+   font-size: small;
    margin: 0;
-   text-align: center;
+   text-align: justify;
    line-height: 20px;
 }
 .parecidos-perfil-add {
@@ -42,4 +46,12 @@ h1 {
    border-radius: 4px;
    border: 0;
    background-color: var(--btn-claro);
+}
+.ver-mais {
+   height: 50px;
+   width: 100%;
+   background-color: var(--btn-claro);
+   border-radius: 4px;
+   border: 0;
+   color: white;
 }

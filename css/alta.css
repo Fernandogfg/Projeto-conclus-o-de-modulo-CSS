@@ -9,6 +9,7 @@ p {
 }
 .alta-noticia {
    display: grid;
+   font-weight: bolder;
 }
 .alta-noticia :nth-child(2) {
    color: var(--btn-claro);

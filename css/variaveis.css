@@ -6,5 +6,8 @@
    --btn-claro: rgb(190, 190, 190);
    --fundo-cont: white;
    --separador: rgb(212, 212, 212);
-   --enviar: rgb(134, 134, 134);
+   --enviar: rgb(73, 73, 73);
+   --hover-claro: rgb(160, 160, 160);
+   --hover-escuro: rgb(99, 99, 99);
+   --perfil-hover: rgb(235, 232, 232);
 }

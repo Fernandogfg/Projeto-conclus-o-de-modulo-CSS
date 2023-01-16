@@ -29,8 +29,8 @@
    margin: auto;
 }
 .perfil-group {
-   position: absolute;
    top: 50px;
+   position: absolute;
    text-align: center;
    width: 100%;
 }
@@ -47,7 +47,8 @@
    height: auto;
    width: 100%;
    box-sizing: border-box;
-   padding: 15px 0 15px 0;
+   padding: 10px 0;
+   margin-top: 10px;
 }
 .seg p {
    margin: 0;
@@ -68,16 +69,23 @@
 }
 .perfil-opt button {
    display: flex;
+   border-radius: 4px;
    gap: 16px;
-   padding: 8px 0px;
-   background-color: var(--fundo-cont);
+   padding: 8px 16px;
    border: none;
    text-align: left;
    align-items: center;
    font-size: larger;
    font-weight: bolder;
 }
+.perfil button img {
+   height: 24px;
+   width: 24px;
+}
 .logolg {
+   display: none;
+}
+.btn-header:nth-child(3) {
    display: none;
 }
 @media screen and (min-width: 992px) {
@@ -89,5 +97,12 @@
    }
    .logolg {
       display: initial;
+   }
+   .btn-header:nth-child(3),
+   .notificacao {
+      display: initial;
+   }
+   .btn-top {
+      display: flex;
    }
 }
