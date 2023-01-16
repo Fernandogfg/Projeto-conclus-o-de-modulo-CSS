@@ -41,7 +41,6 @@ html {
 .pesquisa {
    display: flex;
    align-items: center;
-   justify-self: ;
 }
 button {
    font-family: "Raleway", sans-serif;
@@ -154,7 +153,6 @@ main {
    background-color: var(--enviar);
    justify-content: center;
    border-radius: 2px;
-   dispal
 }
 .btn-top img {
    height: 20px;
@@ -166,8 +164,6 @@ main {
       display: grid;
    }
    .btn-top {
-      display: flex ;
+      display: flex;
    }
-      
-   
 }
