@@ -1,0 +1,60 @@
+.postar {
+   display: grid;
+   grid-template-columns: 48px repeat(6, 1fr);
+   grid-template-rows: 60% 40%;
+   gap: 10px;
+   padding: 10px;
+}
+
+.postar-group {
+   display: flex;
+   grid-column: span 3;
+   gap: 10px;
+}
+
+.textarea {
+   height: 100px;
+   width: 100%;
+   grid-column: span 6;
+   padding: 8px 16px;
+   border: 1px solid var(--btn-cinza);
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.postar-btn {
+   height: 30px;
+   width: 50px;
+   padding: 0px;
+   border: 0px;
+   background-color: var(--btn-claro);
+   border-radius: 2px;
+   color: var(--fundo-cont);
+}
+
+#postar {
+   grid-column: span 3;
+   background-color: var(--enviar);
+   height: 50px;
+   width: 50%;
+   justify-self: right;
+}
+
+.postar p {
+   text-align: left;
+   align-self: top;
+   margin: 0;
+}
+
+.pic {
+   grid-row: span 2;
+   width: 48px;
+   justify-content: center;
+}
+
+.pic img {
+   height: 48px;
+   width: 48px;
+   border-radius: 4px;
+   justify-content: center;
+}

@@ -1,0 +1,44 @@
+input:focus,
+textarea:focus {
+   outline: 1px solid var(--hover-claro);
+}
+.perfil-opt button:hover {
+   background-color: var(--perfil-hover);
+   transition: 0.5s;
+   cursor: pointer;
+}
+button:hover {
+   background-color: var(--hover-claro);
+   transition: 0.5s;
+   cursor: pointer;
+}
+.pesquisa button:hover {
+   background-color: var(--hover-claro);
+   transition: 0.5s;
+   cursor: pointer;
+}
+#postar:hover {
+   background-color: var(--hover-escuro);
+   transition: 0.5s;
+   cursor: pointer;
+}
+.btn-top:hover {
+   background-color: var(--hover-escuro);
+   transition: 0.5s;
+   cursor: pointer;
+}
+body::-webkit-scrollbar {
+   width: 10px;
+   border-radius: 4px;
+}
+body::-webkit-scrollbar-track {
+   background-color: var(--btn-claro);
+   outline: var(--btn-claro) 2px solid;
+   border-radius: 4px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+body::-webkit-scrollbar-thumb {
+   background-color: var(--hover-escuro);
+   border-radius: 5px;
+}

@@ -1,0 +1,79 @@
+.feed {
+   padding: 10px;
+}
+.feed-perfil {
+   display: flex;
+}
+.feed-perfil img {
+   height: 48px;
+   width: 48px;
+   border-radius: 4px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+.feed-info {
+   display: grid;
+   /* grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr; */
+}
+.feed-perfil h3 {
+   margin: 0;
+   align-self: center;
+   height: 20px;
+}
+.feed-perfil span {
+   margin-left: 5px;
+   align-self: center;
+   font-weight: 500;
+   font-size: 14px;
+   color: var(--btn-claro);
+   text-shadow: 0 3px 3px rgb(214, 214, 214);
+}
+.feed-info p {
+   margin: 0;
+}
+.feed-opt {
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+}
+.like-share {
+   display: flex;
+   gap: 10px;
+}
+.like-share button {
+   background-color: var(--btn-claro);
+   border: 0;
+   height: 30px;
+   width: auto;
+   border-radius: 2px;
+   color: var(--fundo-cont);
+}
+.comentarios {
+   height: 18px;
+}
+.comentarios p {
+   margin: 0;
+}
+.comentar {
+   display: flex;
+   gap: 10px;
+}
+.comentar img {
+   height: 48px;
+   width: 48px;
+   border-radius: 4px;
+}
+.comentar input {
+   padding: 10px;
+   width: 100%;
+   border: 1px solid var(--btn-cinza);
+   border-radius: 4px;
+}
+.post-content {
+   margin-bottom: 10px;
+}
+.post-content img {
+   height: 100%;
+   width: 100%;
+}

@@ -5,67 +5,232 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="css/style.css" />
-      <title>Anime-Club</title>
+      <title>Music-Club</title>
    </head>
-   <body>
+   <body id="topo">
       <header class="header">
-         <div class="logo"><img src="assets\images\Group 2.jpg" alt="" /></div>
+         <div class="logo"><img src="assets\images\Group 2.jpg" class="logolg" /><img src="assets/icons/logoxs.png" class="logoxs" /></div>
          <div class="pesquisa">
-            <label class="pesq">
-               <input type="text" placeholder="Buscar..." /><button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                     <path
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m21 21l-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                     />
-                  </svg>
-               </button>
-            </label>
+            <input type="text" placeholder="Buscar..." /><button>
+               <img src="assets/icons/lupa.svg" />
+            </button>
          </div>
          <div class="opt">
             <button class="btn-header">
-               <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path
-                     fill="currentColor"
-                     d="M4 4h16v12H5.17L4 17.17V4m0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4zm2 10h12v2H6v-2zm0-3h12v2H6V9zm0-3h12v2H6V6z"
-                  />
-               </svg>
+               <img src="assets/icons/msg.svg" />
             </button>
             <button class="btn-header">
-               <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path
-                     d="M12 8a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1l-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1l-.07 1l2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42h-4m1.25-18l-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56l.75 1.3l2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04l.75-1.3l-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55l-.75-1.3l-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4h-1.5Z"
-                  />
-               </svg>
+               <img src="assets/icons/cog.svg" alt="" />
             </button>
             <button class="btn-header">
                <div class="notificacao"></div>
-               <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
-                  <path
-                     fill="currentColor"
-                     d="M224.3 173.9c-5.7-9.8-12.5-28.5-12.5-61.9v-7.1c0-46.5-37.3-84.6-83.2-84.9h-.6a83.8 83.8 0 0 0-83.8 84v8c0 33.4-6.8 52.1-12.5 61.9A20.1 20.1 0 0 0 49 204h35.2a44 44 0 0 0 87.6 0H207a20.1 20.1 0 0 0 17.3-30.1ZM128 220a20.1 20.1 0 0 1-19.6-16h39.2a20.1 20.1 0 0 1-19.6 16Zm-72.4-40c10.3-21.6 12.6-48.5 12.6-68v-8A59.7 59.7 0 0 1 128 44h.5c32.7.2 59.3 27.5 59.3 60.9v7.1c0 19.5 2.3 46.4 12.6 68Z"
-                  />
-               </svg>
+               <img src="assets/icons/not.svg" />
             </button>
-            <button class="btn-header foto">foto</button>
+            <button class="btn-header btn-header-foto"><img src="assets/images/Perfil.JPG" /></button>
          </div>
       </header>
       <main class="row">
-         <div class="col-lg-4 perfil">perfil</div>
-         <div class="col-lg-5 posts row">
-            <div class="col-lg-12 story">story</div>
-            <div class="col-lg-12 postar">postar</div>
-            <div class="col-lg-12 feed">postagem</div>
-            <div class="col-lg-12 feed">postagem</div>
+         <div class="col-xl-3 col-lg-4 perfil">
+            <div class="capa">
+               <img src="assets/images/Rio-1960.png" alt="" />
+            </div>
+            <div class="perfil-group">
+               <div class="foto"><img src="assets/images/Perfil.JPG" /></div>
+               <div class="descricao">
+                  <h2>Angenor de Oliveira, Cartola</h2>
+                  <p>Cantor, compositor, poeta e violonista brasileiro.</p>
+                  <p>Considerado por diversos músicos e críticos como o maior sambista da história da música brasileira.</p>
+               </div>
+               <div class="seguidores">
+                  <div class="seg">
+                     32K
+                     <p>Seguidores</p>
+                  </div>
+                  <div class="seg">
+                     325K
+                     <p>Posts</p>
+                  </div>
+               </div>
+               <div class="separador"><hr /></div>
+               <div class="perfil-opt">
+                  <button><img src="assets/icons/feed.svg" /> Feed</button>
+                  <button><img src="assets/icons/conec.svg" /> Conecções</button>
+                  <button><img src="assets/icons/noticias.png" /> Últimas notícias</button>
+                  <button><img src="assets/icons/event.svg" />Eventos</button>
+                  <button>
+                     <img src="assets/icons/cog.svg" />
+                     Configurações
+                  </button>
+               </div>
+            </div>
          </div>
-         <div class="col-lg-3 row aside">
-            <div class="col-lg-12 recomendado">recomendados</div>
-            <div class="col-lg-12 alta">em alta</div>
+         <div class="col-xl-6 col-lg-8 posts col-xs-12">
+            <div class="story">
+               <div class="story-post novo"><img src="assets/icons/novostory.svg" />Novo Story</div>
+               <div class="story-post"><img src="assets/images/storymaximum.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyLeno.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyACDC.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyfoo.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storynikita.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyyounglee.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyChoris.jfif" /></div>
+               <div class="story-post"><img src="assets/images/storytiago.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyCaneta.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storymick.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyeve.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storynanawo.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storyfutakuchi.jpg" /></div>
+               <div class="story-post"><img src="assets/images/storydoom.jpg" /></div>
+            </div>
+            <div class="postar">
+               <div class="pic"><img src="assets/images/Perfil.JPG" /></div>
+               <textarea placeholder="O que você está fazendo ?" class="textarea"></textarea>
+               <div class="postar-group">
+                  <p>Incluir</p>
+                  <button class="postar-btn">Foto</button>
+                  <button class="postar-btn">Video</button>
+                  <button class="postar-btn">Evento</button>
+               </div>
+               <button class="postar-btn" id="postar">Postar</button>
+            </div>
+            <div class="feed">
+               <div class="feed-perfil">
+                  <img src="assets/images/timmaia.png" />
+                  <div class="feed-info">
+                     <h3>Tim Maia<span>- Há 2 horas</span></h3>
+                     <p>Cantor e compositor</p>
+                  </div>
+               </div>
+               <div class="post-content">
+                  <p>
+                     Ela sumiu (sumiu), sumiu (sumiu) <br />
+                     E nunca mais voltou (não voltou, não, uh, uuh)<br />
+                     Ela partiu (partiu), partiu (partiu)<br />
+                     E nunca mais voltou (não voltou, não, uh, uuh)
+                  </p>
+               </div>
+
+               <div class="feed-opt">
+                  <div class="like-share">
+                     <button>Gostei</button>
+                     <button>Compartilhar</button>
+                  </div>
+                  <div class="comentarios"><p href="#">789 Comentarios</p></div>
+               </div>
+               <div class="separador"><hr /></div>
+               <div class="comentar">
+                  <img src="assets/images/Perfil.JPG" />
+                  <input type="text" placeholder="Comentar sobre isso" />
+               </div>
+            </div>
+            <div class="feed">
+               <div class="feed-perfil">
+                  <img src="assets/images/adorinan.png" />
+                  <div class="feed-info">
+                     <h3>Adorinan Barbosa<span>- Há 4 horas</span></h3>
+                     <p>Cantor e compositor</p>
+                  </div>
+               </div>
+               <div class="post-content"><img src="assets/images/Trem.jpg" /></div>
+
+               <div class="feed-opt">
+                  <div class="like-share">
+                     <button>Gostei</button>
+                     <button>Compartilhar</button>
+                  </div>
+                  <div class="comentarios"><p href="#">518 Comentarios</p></div>
+               </div>
+               <div class="separador"><hr /></div>
+               <div class="comentar">
+                  <img src="assets/images/Perfil.JPG" />
+                  <input type="text" placeholder="Comentar sobre isso" />
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-3 aside">
+            <div class="parecidos">
+               <h1>Parecidos com você</h1>
+               <div class="parecidos-group">
+                  <div class="parecidos-perfil">
+                     <div class="parecidos-perfil-foto">
+                        <img src="assets/images/leno.png" />
+                     </div>
+                     <div class="parecidos-perfil-info">
+                        <p>Leno Brega</p>
+                        <p>Cantor e compositor</p>
+                     </div>
+                     <div class="parecidos-perfil-add">
+                        <button><img src="assets/icons/add.svg" /></button>
+                     </div>
+                  </div>
+                  <div class="parecidos-perfil">
+                     <div class="parecidos-perfil-foto">
+                        <img src="assets/images/Manoel.jpg" />
+                     </div>
+                     <div class="parecidos-perfil-info">
+                        <p>Manoel Gomes</p>
+                        <p>Cantor e compositor</p>
+                     </div>
+                     <div class="parecidos-perfil-add">
+                        <button><img src="assets/icons/add.svg" /></button>
+                     </div>
+                  </div>
+                  <div class="parecidos-perfil">
+                     <div class="parecidos-perfil-foto">
+                        <img src="assets/images/choris.jpg" />
+                     </div>
+                     <div class="parecidos-perfil-info">
+                        <p>Alexandre (Chorão)</p>
+                        <p>Cantor e skatista</p>
+                     </div>
+                     <div class="parecidos-perfil-add">
+                        <button><img src="assets/icons/add.svg" /></button>
+                     </div>
+                  </div>
+                  <div class="parecidos-perfil">
+                     <div class="parecidos-perfil-foto">
+                        <img src="assets/images/Seal.jpg" />
+                     </div>
+                     <div class="parecidos-perfil-info">
+                        <p>Seal Henry</p>
+                        <p>Cantor e compositor</p>
+                     </div>
+                     <div class="parecidos-perfil-add">
+                        <button><img src="assets/icons/add.svg" /></button>
+                     </div>
+                  </div>
+                  <div class="parecidos-perfil">
+                     <div class="parecidos-perfil-foto">
+                        <img src="assets/images/jhonny.jpg" />
+                     </div>
+                     <div class="parecidos-perfil-info">
+                        <p>Jhonny Silverhand</p>
+                        <p>Guitarrista</p>
+                     </div>
+                     <div class="parecidos-perfil-add">
+                        <button><img src="assets/icons/add.svg" /></button>
+                     </div>
+                  </div>
+               </div>
+               <button class="ver-mais">Ver mais...</button>
+            </div>
+            <div class="alta">
+               <h1>Em alta</h1>
+               <div class="alta-noticia">
+                  <p>Madonna rasga elogios a Kendrik Lamar e diz que gostaria de colaborar com o rapper.</p>
+                  <p>2 minutos atras</p>
+               </div>
+               <div class="alta-noticia">
+                  <p>Katy Perry vai às lágrimas durante show em Las Vegas</p>
+                  <p>3 minutos atras</p>
+               </div>
+               <div class="alta-noticia">
+                  <p>Pitty pede condições melhores para artistas nacionais no Rock in Rio</p>
+                  <p>4 minutos atras</p>
+               </div>
+            </div>
          </div>
       </main>
+      <a class="btn-top" href="#topo"><img src="assets/icons/arrow.svg" /></a>
    </body>
 </html>

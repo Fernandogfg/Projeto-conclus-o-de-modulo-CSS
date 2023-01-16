@@ -1,0 +1,16 @@
+.alta {
+   padding: 10px;
+   display: grid;
+   gap: 16px;
+}
+.alta h1,
+p {
+   margin: 0;
+}
+.alta-noticia {
+   display: grid;
+   font-weight: bolder;
+}
+.alta-noticia :nth-child(2) {
+   color: var(--btn-claro);
+}

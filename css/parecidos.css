@@ -1,0 +1,57 @@
+.parecidos {
+   padding: 10px;
+}
+.parecidos-group {
+   display: grid;
+   gap: 15px;
+   padding-bottom: 16px;
+}
+h1 {
+   margin: 0;
+   margin-bottom: 15px;
+}
+.parecidos-perfil {
+   display: flex;
+}
+.parecidos-perfil-foto {
+   height: 48px;
+   overflow: hidden;
+}
+.parecidos-perfil-foto img {
+   height: 48px;
+   width: 48px;
+   margin-right: 10px;
+   object-fit: cover;
+}
+.parecidos-perfil-info {
+   display: grid;
+   height: 48px;
+}
+.parecidos-perfil-info p {
+   font-size: small;
+   margin: 0;
+   text-align: justify;
+   line-height: 20px;
+}
+.parecidos-perfil-add {
+   display: flex;
+   flex-grow: 1;
+   justify-content: flex-end;
+   height: 48px;
+}
+.parecidos-perfil-add button {
+   align-self: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 4px;
+   border: 0;
+   background-color: var(--btn-claro);
+}
+.ver-mais {
+   height: 50px;
+   width: 100%;
+   background-color: var(--btn-claro);
+   border-radius: 4px;
+   border: 0;
+   color: white;
+}
