@@ -1,6 +1,6 @@
 .postar {
    display: grid;
-   grid-template-columns: repeat(7, 1fr);
+   grid-template-columns: 48px repeat(6, 1fr);
    grid-template-rows: 60% 40%;
    gap: 10px;
    padding: 10px;
@@ -9,13 +9,16 @@
 .postar-group {
    display: flex;
    grid-column: span 3;
-   justify-content: space-between;
+   gap: 10px;
 }
 
 .textarea {
    height: 100px;
    width: 100%;
    grid-column: span 6;
+   padding: 0;
+   border: 1px solid var(--btn-cinza);
+   border-radius: 4px;
 }
 
 .postar-btn {
@@ -44,6 +47,7 @@
 
 .pic {
    grid-row: span 2;
+   width: 48px;
    justify-content: center;
    /* display: grid; */
 }

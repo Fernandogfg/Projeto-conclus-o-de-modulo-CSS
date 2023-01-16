@@ -27,6 +27,7 @@
    font-weight: 500;
    font-size: 14px;
    color: var(--btn-claro);
+   text-shadow: 0 3px 3px rgb(180, 180, 180);
 }
 .feed-info p {
    margin: 0;
@@ -34,10 +35,42 @@
 .feed-opt {
    display: flex;
    justify-content: space-between;
+   align-items: baseline;
 }
 .like-share {
    display: flex;
    gap: 10px;
 }
 .like-share button {
+   background-color: var(--btn-claro);
+   border: 0;
+   height: 30px;
+   width: 50px;
+   border-radius: 2px;
+}
+.comentarios {
+   height: 18px;
+}
+.comentarios a {
+   text-decoration: none;
+   margin: 0;
+}
+.comentar {
+   display: flex;
+   gap: 10px;
+}
+.comentar img {
+   height: 48px;
+   width: 48px;
+   border-radius: 4px;
+}
+.comentar input {
+   padding: 10px;
+   width: 100%;
+   border: 1px solid var(--btn-cinza);
+   border-radius: 4px;
+}
+.post-content img {
+   height: 100%;
+   width: 100%;
 }
